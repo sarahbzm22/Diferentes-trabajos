@@ -1,0 +1,41 @@
+/*reseteamos los estilos por defecto del navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  background-color: rgb(67, 199, 204);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav#pr-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+nav#pr-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+nav#pr-menu ul li {
+  margin: 0 12px;
+}
+
+/*seleccionamos el header y lo convertimos en un contenedor flex para que el contenedor de los textos y el contenedor de la imagen se coloquen en modo fila*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  gap: 200px;
+}
+
+header > div:first-child {
+  width: 360px;
+}
