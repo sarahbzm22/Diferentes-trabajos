@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Reseteamos los estilos del navegador */
+
+
+*{
+    margin: 0;
+    padding: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* body {
+    background-color: rgb(255, 201, 250);
+} */
+
+
+
+/* Con este selctor y propiedades conseguimos que las imagenes se adapten al tamaño del elmento que las contiene */
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 80px;
+    color: black;
+}
+
+h2 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+
+h1 span,
+h2 span {
+    color: #6e07ce;
+}
+
+
+p {
+    color: grey;
+    font-size: 18px;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
+    padding: 0 40px;
+}
+
+nav#menu {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav#menu ul {
+    list-style: none;
+    display: flex;
+}
+
+nav#menu ul li {
+    margin: 0 12px;
+}
+
+nav#menu ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: grey;
+}
+
+nav#menu ul li a:hover {
+    color: #6e07ce;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px 0;
+    gap: 200px;
+}
+
+header > div:first-child {
+    /* width: 360px;
+    padding-right: 110px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+
+/* header > div:last-child {
+
+} */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* BOTONES, gap es para separar elementos (este caso los botones)*/
+
+header > div:first-child > div {
+    display: flex;
+    gap: 24px;
+}
+
+
+/* Este selector selecciona todos los a dentro del <div>  div a*/
+header > div:first-child > div a {
+    padding: 8px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 14px;
+
+}
+
+header > div:first-child > div a:first-child {
+    background-color: #6e07ce;
+    color: aliceblue;
+}
+
+header > div:first-child > div a:last-child {
+    border: 1px black solid;
+    color: black;
+}
+
+
+header > div {
+    flex: 1;
+    width: 50%;
+}
+
+/* IMAGEN REDONDA */
+
+header > div:last-child {
+    padding: 40px;
+    border: 1px #6e07ce solid;
+    border-radius: 50%;
+    height: fit-content;
+    min-width: 400px;
+}
+
+
+header > div:last-child img {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+/* flexbox.html */
+.flex-cont {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+
+    /* Esta propiedad me permite controlar la alineación vertical. 
+    -Flex-end: se baja.
+    -Center: se centra en todo*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Flex: se reparten el espacio */
+.flex-cont > div {
+    background-color: rgba(110, 7, 206, 0.342);
+    border: 2px #6e07ce solid;
+    padding: 40px;
+    /* flex: 1; */
+    width: 275px;
+    height: fit-content;
+}
+
+
+/* Flex: se va al final, si los demas no tienen un order, ya que de por sí tienen el valor  */
+.flex-cont > div:first-child {
+    order: 1;
+}
+
+
+.flex-cont > div:first-child(2) {
+    flex: 2;
+}
+
+
+/* Centrar horizontalmente y verticalmente */
+
+.sr-cont {
+    background-color: rgb(149, 232, 238);
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc-cont div {
+    background-color: rgb(4, 0, 255);
+    color: antiquewhite;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* Ejemplo de uso flex-wrap */
+
+.flex-cont-wrap {
+    background-color: rgb(255, 213, 213);
+    margin: 80px 0;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex-cont-wrap div {
+    background-color: rgb(221, 171, 221);
+    width: 100px;
+    height: 100px;
+    border:2px red solid;
+    font-weight: bold;
+    color: rgb(174, 255, 255);
+    /* se colocan los números en el medio, no las cajas en sí */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Por si tienes un color x en general y se lo quieres poner a algo en específico */
+.flex-cont-wrap > div > p {
+    color: aliceblue;
+}
+
+
+
+
+
+/* PROJECTS */
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+#projects .pro-row {
+    display: flex;
+    gap: 40px;
+}
+
+#projects .pro-row .small-col {
+    /* flex: 1; */
+    width: 40%;
+}
+
+#projects .pro-row .big-col {
+    /* flex: 2; */
+    width: 60%;
+}
+
+
+/* Selecciona el div que contiene la imagen */
+#projects .pro-row > div > div {
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+
+#projects .pro-row > div > div img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#projects .pro-row > div > h3 {
+    margin-bottom: 16px;
+}
+
+
+
+
+
+/* SECCIÓN SKILLS */
+
+#skills {
+    /* background-color: rgb(152, 152, 255); */
+    margin: 80px 0;
+}
+
+
+#skills .skills-row {
+    display: flex;
+    /* gap: 80px; */
+    margin-top: 20px;
+}
+
+#skills .skills-row .skills-col {
+    /* flex: 1; */
+    width: 25%;
+}
+
+#skills .skills-row .skills-col h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+
+/* Este no hace falta pq lo tenemos arriba ya con p, que afecta a todos los parrafos */
+
+/* #skills .skills-row .skills-col p {
+    font-size: 18px;
+} */
+
+
+/* SECCIÓN MY STORY */
+
+#mystory {
+    
+}
+
+#mystory h2 {
+    margin-bottom: 20px;
+}
+
+#mystory .mystory-row p {
+    margin-bottom: 20px;
+}
+
+#mystory .mystory-row p span {
+    color: #6e07ce;
+}
+
+
+/* FOOTER */

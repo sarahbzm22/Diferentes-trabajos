@@ -1,41 +1,38 @@
-/*reseteamos los estilos por defecto del navegador*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+/* Esto serían los estilos básicos para todo lo que se trata de la tipografía*/
+h1 {
+  font-size: 3.5rem;
+  color: rgb(109, 86, 175);
+  font-weight: bolder;
+  text-align: center;
+  font-family: Georgia, serif;
 }
-.wrapper {
-  background-color: rgb(67, 199, 204);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-nav#pr-menu {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px 0;
+h2 {
+  font-size: 2.5rem;
 }
 
-nav#pr-menu ul {
-  display: flex;
+p {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+section {
+  color: rgb(192, 192, 248);
+}
+
+/*Esto serían los estilos de la barra de navegación*/
+nav#menu ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-nav#pr-menu ul li {
-  margin: 0 12px;
-}
-
-/*seleccionamos el header y lo convertimos en un contenedor flex para que el contenedor de los textos y el contenedor de la imagen se coloquen en modo fila*/
-
-header {
+nav#menu a {
+  padding: 24px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 80px 0;
-  gap: 200px;
-}
-
-header > div:first-child {
-  width: 360px;
 }
