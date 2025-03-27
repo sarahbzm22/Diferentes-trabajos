@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      .caja {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+      }
+
+      .imagenuntercio {
+        width: 33%;
+        height: auto;
+        float: left;
+        margin-right: 10px;
+      }
+
+      #fotogatito {
+        width: 33%;
+        height: auto;
+        float: left;
+        margin-right: 10px;
+        z-index: -1;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color: rgb(109, 86, 175);
+        padding: 1rem;
+      }
+      .menu a {
+        color: rgb(192, 192, 248);
+        text-decoration: none;
+      }
+
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .galeria img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+
+      .perfil {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        padding: 20px;
+        border-radius: 15px;
+        color: white;
+      }
+
+      .perfil img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .animado {
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      #caja-1 {
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
+
+    <div class="caja" id="caja-1">
+      <p>&nbsp;</p>
+    </div>
+
+    <div>
+      <img
+        src="https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-1248x770@Las%20Provincias.jpg"
+        class="imagenuntercio animado"
+        id="fotogatito"
+      />
+    </div>
+
+    <div class="galeria">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0268/6861/files/Gato_Lindo_y_muy_bebe_en_adopcion_grande.jpg?v=1531056539"
+      />
+      <img
+        src="https://www.patasencasa.com/sites/default/files/styles/article_detail_1200/public/2024-12/%C2%BFA%20los%20cu%C3%A1nt%C3%B3s%20d%C3%ADas%20abren%20los%20ojos%20los%20gatos_0.jpg.webp?itok=SESVw5a6"
+      />
+      <img src="https://www.foyel.com/archivos/2/6/pediatria_felina_web.jpg" />
+    </div>
+
+    <div class="perfil">
+      <img
+        src="https://blog.agrocampo.com.co/wp-content/uploads/2019/08/que-significa-sonar-con-gatos-bebes.jpg"
+        class="imagenuntercio"
+      />
+      <div>
+        <h3>Nombre del Usuario</h3>
+        <p>Diseñador Web</p>
+      </div>
+    </div>
+
+    <p>
+      <strong>Lorem Ipsum</strong> is simply dummy text of the printing and
+      typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an unknown printer took a galley of type
+      and scrambled it to make a type specimen book. It has survived not only
+      five centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with
+      desktop publishing software like Aldus PageMaker including versions of
+      Lorem Ipsum.
+    </p>
+  </body>
+</html>
