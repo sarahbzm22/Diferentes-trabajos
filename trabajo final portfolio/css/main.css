@@ -36,3 +36,19 @@ nav#menu a {
   display: flex;
   justify-content: space-between;
 }
+
+#my-logo {
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+header {
+  top: 0%;
+  background-color: rgb(109, 86, 175);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

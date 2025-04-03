@@ -1,0 +1,38 @@
+/* Estilos base (Mobile First) */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header,
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.columna {
+  /*
+		Sintaxis: flex: [flex-grow] [flex-shrink] [flex-basis];
+		- flex-grow:    1 → permite que crezca para ocupar espacio disponible
+		- flex-shrink:  1 → permite que se reduzca si no cabe
+		- flex-basis: 100% → ancho base deseado para esta columna
+		En este caso: 1 columna por fila en móvil.
+	*/
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.columna:nth-child(odd) {
+  background: #f0f0f0;
+}

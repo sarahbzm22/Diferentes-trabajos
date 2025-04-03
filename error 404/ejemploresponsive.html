@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Responsive</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <style>
+      /* Estilos base (Mobile First) */
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: mediumslateblue;
+        min-width: 100vw;
+      }
+
+      main {
+        background: #fff;
+      }
+
+      header,
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 90vw;
+        margin: auto;
+        padding: 1rem;
+      }
+
+      .columna {
+        font-size: clamp(22px 16px, 45px);
+        /*
+		Sintaxis: flex: [flex-grow] [flex-shrink] [flex-basis];
+		- flex-grow:    1 → permite que crezca para ocupar espacio disponible
+		- flex-shrink:  1 → permite que se reduzca si no cabe
+		- flex-basis: 100% → ancho base deseado para esta columna
+		En este caso: 1 columna por fila en móvil.
+	*/
+        flex: 1 1 100%;
+        box-sizing: border-box;
+        padding: 1rem;
+      }
+
+      .columna:nth-child(odd) {
+        background: #f0f0f0;
+      }
+
+      /* Tablet (min-width: 600px) — 2 columnas */
+      @media (min-width: 600px) {
+        .columna {
+          /* 2 columnas por fila: cada una ~50% del ancho */
+          flex: 1 1 50%;
+        }
+      }
+
+      /* Desktop (min-width: 900px) — 3 columnas */
+      @media (min-width: 900px) {
+        .columna {
+          /* 3 columnas por fila: cada una ~33.33% del ancho */
+          flex: 1 1 33.33%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mi Sitio Web</h1>
+    </header>
+    <main class="contenedor">
+      <article class="columna">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nemo
+        labore sint, vel enim quos at cum soluta voluptates beatae doloribus
+        cumque aliquid dolorum repellat expedita perspiciatis accusamus facilis
+        odit?
+      </article>
+      <article class="columna">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus rem
+        animi corporis tempore officia unde itaque saepe commodi odio! Mollitia
+        ab nobis eius libero. Neque impedit laboriosam ab error maxime.
+      </article>
+      <article class="columna">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        officia consectetur nemo suscipit sit beatae dignissimos voluptas? Quis
+        inventore, aspernatur ipsa, vel officia itaque doloribus maiores tenetur
+        similique ut quod.
+      </article>
+      <article class="columna">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        officia consectetur nemo suscipit sit beatae dignissimos voluptas? Quis
+        inventore, aspernatur ipsa, vel officia itaque doloribus maiores tenetur
+        similique ut quod.
+      </article>
+      <article class="columna">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        officia consectetur nemo suscipit sit beatae dignissimos voluptas? Quis
+        inventore, aspernatur ipsa, vel officia itaque doloribus maiores tenetur
+        similique ut quod.
+      </article>
+      <article class="columna">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        officia consectetur nemo suscipit sit beatae dignissimos voluptas? Quis
+        inventore, aspernatur ipsa, vel officia itaque doloribus maiores tenetur
+        similique ut quod.
+      </article>
+    </main>
+    <footer>&copy; 2025 Mi Sitio Web</footer>
+  </body>
+</html>
