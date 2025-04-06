@@ -1,14 +1,4 @@
 /* Esto serían los estilos básicos para todo lo que se trata de la tipografía*/
-h1 {
-  font-size: 3.5rem;
-  color: rgb(109, 86, 175);
-  font-weight: bolder;
-  text-align: center;
-  font-family: Georgia, serif;
-}
-h2 {
-  font-size: 2.5rem;
-}
 
 p {
   text-align: center;
@@ -16,7 +6,7 @@ p {
 
 h3 {
   font-size: 1.5rem;
-  color: rgb(192, 192, 248);
+  color: rgb(191, 191, 247);
 }
 
 section {
@@ -24,6 +14,14 @@ section {
 }
 
 /*Esto serían los estilos de la barra de navegación*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(192, 192, 248);
+}
+
 .menu {
   position: fixed;
   width: 100vw;
@@ -39,26 +37,30 @@ section {
 }
 
 img#my-logo {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   padding: 1rem;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 4rem;
-}
-
-.nav-links a {
+.nav-logo h2 {
   text-decoration: none;
   color: rgb(192, 192, 248);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bolder;
 }
 
+.name_web {
+  display: flex;
+  align-items: center;
+}
+
+.name_web h1 {
+  text-decoration: none;
+  color: rgb(192, 192, 248);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
 .nav-hbmenu {
   display: flex;
   align-items: center;
@@ -72,7 +74,7 @@ img#my-logo {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  padding: 1.5rem;
+  padding: 1.3rem;
 }
 
 .nav-hbmenu i {
@@ -91,3 +93,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+/* diseño de las tarjetas */
+
+/* diseño de las tarjetas */
