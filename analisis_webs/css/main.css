@@ -4,15 +4,6 @@ p {
   text-align: center;
 }
 
-h3 {
-  font-size: 1.5rem;
-  color: rgb(191, 191, 247);
-}
-
-section {
-  color: rgb(192, 192, 248);
-}
-
 /*Esto serían los estilos de la barra de navegación*/
 
 body {
@@ -95,5 +86,37 @@ header {
 }
 
 /* diseño de las tarjetas */
+.containers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+  margin-top: 3rem;
+  min-width: 4rem;
+}
+
+.containers .box {
+  width: 14rem;
+  height: 24rem;
+  background-color: rgb(109, 86, 175);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  background-image: url(../img/imagen1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: url(../img/imagen1.png); */
+}
 
 /* diseño de las tarjetas */
+
+/* animación hover */
