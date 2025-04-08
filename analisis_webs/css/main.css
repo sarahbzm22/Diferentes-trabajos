@@ -76,17 +76,19 @@ img#my-logo {
 }
 
 header {
-  height: 4rem;
+  height: 80%;
   width: 100vw;
   top: 0%;
   background-color: rgb(109, 86, 175);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
 }
 
 /* diseño de las tarjetas */
-.containers {
+/* .containers {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -114,7 +116,38 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: url(../img/imagen1.png); */
+  background-image: url(../img/imagen1.png);
+} */
+
+/* Contenedor general */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Tarjetas individuales */
+.card {
+  width: 14rem;
+  height: 24rem;
+  background-color: rgb(109, 86, 175); /* morado */
+  border-radius: 20px;
+  overflow: hidden; /* importante para que la imagen se recorte dentro */
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none; /* quita subrayado del enlace */
+  display: block; /* necesario para que <a> se comporte como una caja */
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+  width: 100vw;
+  height: 4rem;
+  object-fit: cover; /* hace que la imagen se recorte a la caja sin deformarse */
+  display: block;
+  object-position: 50% 50%;
 }
 
 /* diseño de las tarjetas */
