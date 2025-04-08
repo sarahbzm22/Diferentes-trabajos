@@ -46,7 +46,7 @@ img#my-logo {
   align-items: center;
 }
 
-.name_web h1 {
+.name_web {
   text-decoration: none;
   color: rgb(192, 192, 248);
   font-size: 1.5rem;
@@ -76,7 +76,7 @@ img#my-logo {
 }
 
 header {
-  height: 80%;
+  height: 4rem;
   width: 100vw;
   top: 0%;
   background-color: rgb(109, 86, 175);
@@ -126,30 +126,41 @@ header {
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px;
+  margin-top: 6rem;
 }
 
 /* Tarjetas individuales */
 .card {
   width: 14rem;
   height: 24rem;
-  background-color: rgb(109, 86, 175); /* morado */
+  background-color: rgb(109, 86, 175);
   border-radius: 20px;
   overflow: hidden; /* importante para que la imagen se recorte dentro */
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-decoration: none; /* quita subrayado del enlace */
-  display: block; /* necesario para que <a> se comporte como una caja */
+  text-decoration: none;
+  display: block;
 }
 
 /* Imagen dentro de la tarjeta */
 .card img {
-  width: 100vw;
-  height: 4rem;
-  object-fit: cover; /* hace que la imagen se recorte a la caja sin deformarse */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  object-position: 50% 50%;
 }
 
 /* diseño de las tarjetas */
 
 /* animación hover */
+/* animación hover */
+
+/* imagen Charle's Organics */
+.homepage img {
+  width: 80%;
+  height: 80%;
+  object-fit: scale-down;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+/* imagen Charle's Organics */
