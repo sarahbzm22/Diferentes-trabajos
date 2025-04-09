@@ -170,16 +170,16 @@ header {
 /* Estilos para el botón de la flecha hacia atrás */
 .back-button {
   position: fixed; /* Fijo para que esté siempre visible */
-  top: 6.5rem; /* Lo colocamos en la parte superior */
-  left: 2.4rem; /* Lo colocamos a la izquierda */
-  background-color: rgb(192, 192, 248); /* Fondo semitransparente */
+  top: 15vh; /* Para que esté arriba */
+  left: 3.3vw; /* Para que esté a la izquierda */
+  background-color: rgb(192, 192, 248);
   color: rgb(109, 86, 175);
   border: none;
   padding: 0.5rem;
-  border-radius: 100%; /* Lo hacemos redondeado */
+  border-radius: 30%; /* Para redondeado */
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 1000; /* Para asegurarnos de que esté por encima de otros elementos */
+  z-index: 1000; /* Para que esté por encima de otros elementos */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transición para el hover */
 }
 
@@ -208,7 +208,7 @@ header {
 .nombre {
   text-align: left;
   font-size: 1.8rem;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -244,12 +244,79 @@ header {
 }
 
 .Analisis img,
-.Analisis video {
+.Analisis .home {
   display: block;
-  max-width: 100%;
+  width: 50%;
   margin: 1.5rem auto;
   border-radius: 10px;
+  position: center;
 }
+
+.Analisis .other-videos-conteiner {
+  display: block;
+  width: 70%;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .other-videos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.Analisis .other-videos video {
+  display: block;
+  width: 25%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .video-homepage video {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .images {
+  display: block;
+  width: 30%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.other-videos2 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.other-videos2 video {
+  display: block;
+  width: 65%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
+.Analisis .images2 img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  position: center;
+}
+
 /* Analisis */
 
 /* footer */
